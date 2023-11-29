@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saxxya</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/c00d4ebf05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1><a href="#top">Saxxya's Portfolio</a></h1>
+      <ul class="nav-menu">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skill">Skill & works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://twitter.com/saxx_ya"><i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i></a></li>
+        <li><a href="https://instagram.com/saxxya_38/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+      </ul>
+      <button class="nav-icon is-active"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
+      <button class="nav-icon"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
+
+    </nav>
+    
+    <div class="main-visual" id="top">
+      <h1>Portfolio</h1>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>About me</h1>
+      <div class="about">
+        <h2>saxxya</h2>
+        <ul>
+          <li>I was born in 1988.</li>
+          <li>I love my son, cats, and strawberries.</li>
+        </ul>
+        <p>春から本格的に独学でプログラミング学習をはじめました。家事や育児、仕事の合間に学習サイトや書籍の制作課題を応用したり、模写コーディングをしながら学習。現在は転職活動しながら更なるスキルの獲得を目指しています。</p>
+        <h2>学習スキル</h2>
+        <p>HTML5/CSS/Sass(scss)/JaveScript (ES2015)/jQuery/Ruby/Node.js/npm/Express/Ruby on Rails/Git/GitHub /MySQL(SQL)</p>
+      </div>
+    </section>
+
+    <section id="skill">
+      <h1>Skill & Works</h1>
+      <div class="works">
+        <div class="works-items">
+          <div class="slide-images">
+            <div><img src="images/myportfolio_pc.png" alt="ポートフォリオサイトのPCトップ画像"></div>
+            <div><img src="images/myportfolio_mobile.png" alt="ポートフォリオサイトのモバイルトップ画像"></div>
+            <div><img src="images/myportfolio_mobile_menu.png" alt="ポートフォリオサイトのモバイルトップのメニュー付き画像"></div>
+          </div>
+          <div class="works-text">
+            <p>本サイト<br>ナビゲーションバーの固定や、レスポンシブ対応及びブレイクポイントでの表示非表示切り替え、画像のスライドなど、最低限よくある機能の実装を目指して作成</p>
+            <h2>使用スキル</h2>
+            <p>HTML/Sass(scss)/JaveScript/jQuery</p>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="works">
+        <div class="works-items">
+          <div class="slide-images">
+            <div><img src="images/pass_generate01.png" alt="パスワードジェネレーターサイトの画像"></div>
+            <div><img src="images/pass_generate02.png" alt="パスワードジェネレーターサイトの画像"></div>
+            <div><img src="images/pass_generate03.png" alt="パスワードジェネレーターサイトの画像"></div>
+            <div><img src="images/pass_generate04.png" alt="パスワードジェネレーターサイトの画像"></div>
+            <div><img src="images/pass_generate05.png" alt="パスワードジェネレーターサイトの画像"></div>
+          </div>
+          <div class="works-text">
+            <p>JaveScriptの練習で作ったパスワードジェネレーター<br>自分がよく使うので、欲しい機能として文字数を選択できたり、クリックしてすぐコピーできるようにしたりと試行錯誤しながら作成</p>
+            <h2>使用スキル</h2>
+            <p>HTML/Sass(scss)/JaveScript</p>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <div class="contact">
+        <p>何かありましたらDMへご連絡ください</p>
+        <p>X(旧Twitter):<a href="https://twitter.com/saxx_ya">@saxx_ya</a></p>
+        <p>Instagram:<a href="https://instagram.com/saxxya_38/">@saxxya_38</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>design by saxxya 最終更新日 23/11/29</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(".nav-icon").click(function () {
+      $(".nav-icon").toggleClass("is-active");
+      $(".nav-menu").toggleClass("is-active");
+    });
+
+    $(function() {
+      $('a[href^="#"]').click(function() {
+        var adjust = 0;
+        var speed = 200;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top + adjust;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+      });
+    });
+
+    $(".slide-images").slick({
+      autoplay: true,
+      adaptiveHeight: true,
+      pauseOnHover: false,
+      dots: true,
+      dotsClass: "slide-dots",
+      prevArrow: '<img src="images/circle_left.png" class="slide-arrow prev-arrow">',
+      nextArrow: '<img src="images/circle_right.png" class="slide-arrow next-arrow">',
+    });
+  </script>
+</body>
+</html>
