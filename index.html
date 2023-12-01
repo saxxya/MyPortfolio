@@ -23,7 +23,6 @@
       </ul>
       <button class="nav-icon is-active"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></button>
       <button class="nav-icon"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></button>
-
     </nav>
     
     <div class="main-visual" id="top">
@@ -42,7 +41,7 @@
         </ul>
         <p>春から本格的に独学でプログラミング学習をはじめました。家事や育児、仕事の合間に学習サイトや書籍の制作課題を応用したり、模写コーディングをしながら学習。現在は転職活動しながら更なるスキルの獲得を目指しています。</p>
         <h2>学習スキル</h2>
-        <p>HTML5/CSS/Sass(scss)/JaveScript(ES2015)/jQuery/Ruby/Node.js/npm/Express/Ruby on Rails/Git/GitHub/MySQL(SQL)</p>
+        <p>HTML5/CSS/Sass(scss)/JaveScript (ES2015)/jQuery/Ruby/Node.js/npm/Express/Ruby on Rails/Git/GitHub /MySQL(SQL)</p>
       </div>
     </section>
 
@@ -59,7 +58,7 @@
             <p><a href=" https://saxxya.github.io/MyPortfolio/">My Portfolio</a>(本サイト)<br>ナビゲーションバーの固定や、レスポンシブ対応及びブレイクポイントでの表示非表示切り替え、画像のスライドなど、最低限よくある機能の実装を目指して作成</p>
             <h2>使用スキル</h2>
             <p>HTML/Sass(scss)/JaveScript/jQuery</p>
-            <button type="button">><a href="https://github.com/saxxya/MyPortfolio">GitHub</a></button
+            <a href="https://github.com/saxxya/MyPortfolio">GitHub</a>
           </div>
         </div>
       </div>
@@ -74,10 +73,10 @@
             <div><img src="images/pass_generate05.png" alt="パスワードジェネレーターサイトの画像"></div>
           </div>
           <div class="works-text">
-            <p><a href="https://saxxya.github.io/password-generator/">パスワードジェネレーター</a><br></p>JaveScriptの練習で作ったパスワードジェネレーター<br>自分がよく使うので、欲しい機能として文字数を選択できたり、クリックしてすぐコピーできるようにしたりと試行錯誤しながら作成</p>
+            <p><a href="https://saxxya.github.io/password-generator/">パスワードジェネレーター</a><br>JaveScriptの練習で作ったパスワードジェネレーター<br>自分がよく使うので、欲しい機能として文字数を選択できたり、クリックしてすぐコピーできるようにしたりと試行錯誤しながら作成</p>
             <h2>使用スキル</h2>
             <p>HTML/Sass(scss)/JaveScript</p>
-            <button type="button"><a href="https://github.com/saxxya/password-generator">GitHub</a></button>
+            <a href="https://github.com/saxxya/password-generator">GitHub</a>
           </div>
         </div>
       </div>
@@ -98,11 +97,13 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
+    // ハンバーガーメニュー
     $(".nav-icon").click(function () {
       $(".nav-icon").toggleClass("is-active");
       $(".nav-menu").toggleClass("is-active");
     });
 
+    // スクロール
     $(function() {
       $('a[href^="#"]').click(function() {
         var adjust = 0;
@@ -115,6 +116,7 @@
       });
     });
 
+    // スライド画像
     $(".slide-images").slick({
       autoplay: true,
       adaptiveHeight: true,
