@@ -244,6 +244,7 @@ footer {
   .nav-menu {
     display: none;
   }
+  // ハンバーガーメニュー
   .nav-menu.is-active{
     position: fixed;
     top: 0;
@@ -251,13 +252,15 @@ footer {
     z-index: 5;
     background: rgba(0,0,0,0.5);
     width: 30vw;
-    max-width: 200px;
-    height: 95vh;
+    max-width: 300px;
+    height: 100vh;
+    padding-inline-start: 10px;
+    margin-block-start: 0%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     li {
-      width: 12rem;
+      text-align: center;
       border-radius: 10px;
       padding: 5px 10px;
       margin: 10px 0;
